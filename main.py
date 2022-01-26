@@ -8,28 +8,28 @@ async def root():
     return {"message": "Hello Duke"}
 
 @app.get("/add/{num1}/{num2}")
-async def add(num1: int, num2: int):
+def add(num1: int, num2: int):
     """Add two numbers together"""
 
     total = num1 + num2
     return {"total": total}
 
 @app.get("/sub/{num1}/{num2}")
-async def sub(num1: int, num2: int):
+def sub(num1: int, num2: int):
     """Do substraction of two numbers"""
 
     total = num1 - num2
     return {"total": total}
 
 @app.get("/mul/{num1}/{num2}")
-async def mul(num1: int, num2: int):
+def mul(num1: int, num2: int):
     """Multiply two numbers together"""
 
     total = num1 * num2
     return {"total": total}
 
 @app.get("/div/{num1}/{num2}")
-async def div(num1: int, num2: int):
+def div(num1: int, num2: int):
     """Do division between two numbers"""
 
     total = num1 / num2
