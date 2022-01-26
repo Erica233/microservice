@@ -14,11 +14,25 @@ async def add(num1: int, num2: int):
     total = num1 + num2
     return {"total": total}
 
-@app.get("/substract/{num1}/{num2}")
-async def substract(num1: int, num2: int):
+@app.get("/sub/{num1}/{num2}")
+async def sub(num1: int, num2: int):
     """Do substraction of two numbers"""
 
     total = num1 - num2
+    return {"total": total}
+
+@app.get("/mul/{num1}/{num2}")
+async def mul(num1: int, num2: int):
+    """Multiply two numbers together"""
+
+    total = num1 * num2
+    return {"total": total}
+
+@app.get("/div/{num1}/{num2}")
+async def div(num1: int, num2: int):
+    """Do division between two numbers"""
+
+    total = num1 / num2
     return {"total": total}
 
 if __name__ == '__main__':
