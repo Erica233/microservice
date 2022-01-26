@@ -1,10 +1,10 @@
 from main import add, sub, mul, div
 
 def test_add():
-    assert add(3, 1) == {"total":4}
+    assert {"total":4} == add(3, 1)
    
 def test_sub():
-    assert sub(3, 1) == {"total":2}
+    assert {"total":2} == sub(3, 1)
     
 def test_mul():
     assert mul(3, 2) == {"total":6}
