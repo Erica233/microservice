@@ -1,4 +1,7 @@
-from main import add, sub, mul, div
+from main import add
+from main import sub
+from main import mul
+from main import div
 
 def test_add():
     assert {"total":4} == add(3, 1)
