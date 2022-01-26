@@ -16,7 +16,7 @@ def add(num1: int, num2: int):
 
 @app.get("/sub/{num1}/{num2}")
 def sub(num1: int, num2: int):
-    """Do substraction of two numbers"""
+    """Do subtraction of two numbers"""
 
     total = num1 - num2
     return {"total": total}
